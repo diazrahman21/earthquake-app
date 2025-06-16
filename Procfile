@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run earthquake-app.py
+web: streamlit run earthquake-app.py --server.port=$PORT --server.address=0.0.0.0

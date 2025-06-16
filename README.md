@@ -60,10 +60,11 @@ Data mencakup:
 
 ### Deploy ke Cloud Platform
 
-#### Streamlit Cloud
+#### Streamlit Cloud (Recommended - Gratis & Mudah)
 1. Push code ke GitHub repository
 2. Kunjungi [share.streamlit.io](https://share.streamlit.io)
-3. Connect repository dan deploy
+3. Connect repository dan set main file: `earthquake-app.py`
+4. Deploy otomatis!
 
 #### Heroku
 1. Install Heroku CLI
@@ -72,6 +73,16 @@ Data mencakup:
    heroku create earthquake-indonesia-app
    git push heroku main
    ```
+
+#### Railway/Render
+1. Connect GitHub repository
+2. Set start command: 
+   ```bash
+   streamlit run earthquake-app.py --server.port=$PORT --server.address=0.0.0.0
+   ```
+
+**📋 Troubleshooting Deployment:**
+Jika ada error "installer returned a non-zero exit code", lihat file `DEPLOYMENT.md` untuk solusi lengkap.
 
 ## 📱 Cara Penggunaan
 
